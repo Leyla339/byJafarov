@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+header {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.head {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 999;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.list {
+  display: flex;
+  gap: 30px;
+}
+
+.list a {
+  font: 500 22px "Playfair Display", serif;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.list a:hover {
+  color: brown;
+}
+
+.logo {
+  color: white;
+  background-color: black;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font: 600 24px "Playfair Display", serif;
+}
+
+.list .active {
+  text-decoration: underline !important;
+  color: brown !important;
+  text-underline-offset: 6px;
+}
+
+.burger-menu {
+  display: none;
+  cursor: pointer;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: black;
+}
+
+@media (max-width: 1300px) {
+  header {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 15px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 4px 12px;
+    border-radius: 8px;
+    padding: 15px 25px;
+  }
+
+  .list.active {
+    display: flex;
+  }
+
+  .list a {
+    font-size: 18px;
+    padding: 8px 0;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+}

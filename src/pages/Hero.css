@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+.section1,
+.section2 {
+  width: 1200px;
+  margin: 0 auto;
+}
+.section1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90vh;
+}
+.section1 img {
+  width: 400px;
+  border-radius: 50%;
+}
+.content1 h1 {
+  font: 900 70px Roboto;
+  width: 600px;
+  margin: 0;
+}
+.head-h {
+  text-transform: uppercase;
+  margin: 20px 0 50px 0;
+}
+.content1 h2 {
+  font: 600 50px Roboto;
+  margin-top: 10px;
+}
+.content1 h1 span {
+  color: brown;
+}
+.content1 p {
+  font: 700 16px Roboto;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.content1 a {
+  font: 400 16px Roboto;
+  letter-spacing: 1px;
+  color: white;
+  background-color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.4s;
+}
+.content1 a:hover {
+  background-color: rgba(51, 51, 51, 0.927);
+}
+
+/* Section1 - responsive */
+@media (max-width: 1300px) {
+  .section1,
+  .section2 {
+    width: 90%;
+  }
+}
+@media (max-width: 1000px) {
+  .content1 h1 {
+    font-size: 50px;
+    width: 40%;
+  }
+  .section1 img {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .section1 {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .section1 img {
+    width: 250px;
+    margin-top: 30px;
+  }
+
+  .content1 h1 {
+    font-size: 40px;
+    width: 100%;
+  }
+
+  .content1 h2 {
+    font-size: 28px;
+  }
+
+  .content1 p {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  .content1 a {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+.content2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+.section2 h1 {
+  margin: 50px 0;
+  font: 700 40px Playfair Display;
+}
+.section2 .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+.section2 img {
+  width: 50px;
+}
+.section2 .card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  width: 300px;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+.section2 .card:hover {
+  background-color: rgba(128, 128, 128, 0.345);
+}
+.card h3 {
+  font: 400 24px Roboto;
+}
+
+.content2 a {
+  font: 400 16px Roboto;
+  letter-spacing: 1px;
+  color: white;
+  background-color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  width: fit-content;
+  transition: 0.4s;
+}
+.content2 a:hover {
+  background-color: rgba(51, 51, 51, 0.927);
+}
+/* Section2 - responsive */
+@media (max-width: 900px) {
+  .section2 h1 {
+    text-align: center;
+  }
+}
+.section3 {
+  background-color: black;
+  margin: 50px 0;
+}
+.content3 {
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 70px;
+}
+.content3 img {
+  width: 50%;
+  height: 400px;
+  object-fit: cover;
+}
+.content3 hr {
+  width: 70px;
+  border: 2px solid brown;
+}
+.content3 h1 {
+  font: 600 36px Roboto;
+  margin: 15px 0 25px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.content3 p {
+  font: 400 14px Roboto;
+  width: 500px;
+  margin-bottom: 30px;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+.content3 a {
+  font: 400 16px Roboto;
+  letter-spacing: 1px;
+  color: black;
+  background-color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  width: fit-content;
+  transition: 0.4s;
+}
+.content3 a:hover {
+  background-color: brown;
+}
+
+/* Section3 - responsive */
+@media (max-width: 1200px) {
+  .content3 p {
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  .content3 {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .content3 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .content3 p {
+    width: 100%;
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .content3 h1 {
+    font-size: 28px;
+  }
+
+  .content3 a {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .content3 hr {
+    margin: 0 auto;
+  }
+}
