@@ -12,10 +12,10 @@ const App = () => {
     <div>
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/about" element={<About />}></Route>
-        <Route path="/services" element={<Services />}></Route>
-        <Route path="/contact" element={<Contact />}></Route>
+        <Route path="/byJafarov" element={<Home />}></Route>
+        <Route path="/byJafarov/about" element={<About />}></Route>
+        <Route path="/byJafarov/services" element={<Services />}></Route>
+        <Route path="/byJafarov/contact" element={<Contact />}></Route>
       </Routes>
     </div>
   );
